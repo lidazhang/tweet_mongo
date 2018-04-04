@@ -127,7 +127,7 @@ if __name__ == '__main__':
             #Connect to the Twitter stream
             stream = Stream(auth, listener)
             keywords = ["viaje, viaje gratis, decimo viaje, descuento, beneficio"]
-            #stream.filter(locations=[-0.530, 51.322, 0.231, 51.707])#Tweets from London
+            #stream.filter(locations=[-0.530, 51.322, 0.231, 51.707])
             stream.filter(track=keywords,languages=["es"])
 
         except KeyboardInterrupt:
